@@ -1262,6 +1262,11 @@ static const u8 sLightBallDesc[] = _(
     "raises the power of\n"
     "Pikachu and Raichu.");
 
+static const u8 sRustedArmorDesc[] = _(
+    "A hold item that\n"
+    "raises the power of\n"
+    "Urshifu.");
+
 static const u8 sSoftSandDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
