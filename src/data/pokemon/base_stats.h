@@ -29606,12 +29606,12 @@ const struct BaseStats gBaseStats[] =
 
 [SPECIES_URSHIFU] =
     {
-    .baseHP        = 100,
-    .baseAttack    = 130,
-    .baseDefense   = 100,
-    .baseSpeed     = 97,
-    .baseSpAttack  = 63,
-    .baseSpDefense = 60,
+    .baseHP        = 255,
+    .baseAttack    = 255,
+    .baseDefense   = 255,
+    .baseSpeed     = 255,
+    .baseSpAttack  = 255,
+    .baseSpDefense = 255,
     .type1 = TYPE_FIGHTING,
     .type2 = TYPE_DARK,
     .catchRate = 255,
@@ -32633,12 +32633,12 @@ const struct BaseStats gBaseStats[] =
 
 [SPECIES_URSHIFU_RAPID_STRIKE_STYLE] =
     {
-    .baseHP        = 100,
-    .baseAttack    = 130,
-    .baseDefense   = 100,
-    .baseSpeed     = 97,
-    .baseSpAttack  = 63,
-    .baseSpDefense = 60,
+    .baseHP        = 255,
+    .baseAttack    = 255,
+    .baseDefense   = 255,
+    .baseSpeed     = 255,
+    .baseSpAttack  = 255,
+    .baseSpDefense = 255,
     .type1 = TYPE_FIGHTING,
     .type2 = TYPE_WATER,
     .catchRate = 255,
