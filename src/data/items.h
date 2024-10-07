@@ -2941,6 +2941,18 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
+    [ITEM_RUSTED_ARMOR] =
+    {
+        .name = _("Rusted_Armor"),
+        .itemId = ITEM_RUSTED_ARMOR,
+        .price = 1000,
+        .holdEffect = HOLD_EFFECT_RUSTED_ARMOR,
+        .description = sRustedArmorDesc,
+        .pocket = POCKET_BATTLE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+
     [ITEM_SOFT_SAND] =
     {
         .name = _("Soft Sand"),
