@@ -168,7 +168,7 @@ static const u16 sStarterMonAlola[STARTER_MON_COUNT] =
 static const u16 sStarterMonGalar[STARTER_MON_COUNT] =
 {
     SPECIES_GROOKEY,
-    SPECIES_SCORBUNNY,
+    SPECIES_URSHIFU,
     SPECIES_SOBBLE,
 };
 
