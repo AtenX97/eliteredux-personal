@@ -14302,8 +14302,14 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_PIKACHU)
             MulModifier(&modifier, UQ_4_12(2.0));
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_RAICHU)
-            MulModifier(&modifier, UQ_4_12(1.5));
+            MulModifier(&modifier, UQ_4_12(1.5));	    
         break;
+    case HOLD_EFFECT_RUSTED_ARMOR:
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_URSHIFU)
+            MulModifier(&modifier, UQ_4_12(2.0));
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_URSHIFU_RAPID_STRIKE)
+            MulModifier(&modifier, UQ_4_12(2.0));	    
+        break;	    
     case HOLD_EFFECT_CHOICE_BAND:
         if (IS_MOVE_PHYSICAL(move))
             MulModifier(&modifier, UQ_4_12(1.5));
