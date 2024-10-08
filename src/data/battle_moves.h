@@ -10538,7 +10538,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PLASMA_FISTS] =
     {
         .effect = EFFECT_PLASMA_FISTS,
-        .power = 100,
+        .power = 120,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 15,
@@ -11605,12 +11605,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_WICKED_BLOW] =
     {
-        .effect = EFFECT_HIT,
-        .power = 70, // 80
+        .effect = EFFECT_ALL_STATS_UP_HIT,
+        .power = 100, // 80
         .type = TYPE_DARK,
         .accuracy = 100,
-        .pp = 5,
-        .secondaryEffectChance = 0,
+        .pp = 15,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_IRON_FIST_BOOST,
@@ -11621,10 +11621,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_SURGING_STRIKES] =
     {
         .effect = EFFECT_TRIPLE_KICK,
-        .power = 25,
+        .power = 100,
         .type = TYPE_WATER,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -11866,12 +11866,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_SEISMIC_FIST] =
     {
-        .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 85,
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 120,
         .type = TYPE_GROUND,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED | FLAG_IRON_FIST_BOOST | FLAG_SHEER_FORCE_BOOST,
