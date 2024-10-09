@@ -12094,23 +12094,7 @@ case ITEMEFFECT_KINGSROCK:
                 RecordItemEffectBattle(battlerId, battlerHoldEffect);
             }
             break;
-        case HOLD_EFFECT_RUSTED_ARMOR:
-            if (!gBattleMons[battlerId].status1
-                && !IS_BATTLER_OF_TYPE(battlerId, TYPE_FIRE)
-                && GetBattlerAbility(battlerId) != ABILITY_WATER_VEIL
-				&& !BattlerHasInnate(battlerId, ABILITY_WATER_VEIL)
-                && GetBattlerAbility(battlerId) != ABILITY_WATER_BUBBLE
-				&& !BattlerHasInnate(battlerId, ABILITY_WATER_BUBBLE)
-                && GetBattlerAbility(battlerId) != ABILITY_COMATOSE
-				&& !BattlerHasInnate(battlerId, ABILITY_COMATOSE)
-                && IsBattlerAlive(battlerId))
-            {
-                effect = ITEM_STATUS_CHANGE;
-                gBattleMons[battlerId].status1 = STATUS1_BURN;
-                BattleScriptExecute(BattleScript_FlameOrb);
-                RecordItemEffectBattle(battlerId, battlerHoldEffect);
-            }
-            break;	
+	
         case HOLD_EFFECT_STICKY_BARB:   // Not an orb per se, but similar effect, and needs to NOT activate with pickpocket
             if (GetBattlerAbility(battlerId) != ABILITY_MAGIC_GUARD
                  && GetBattlerAbility(battlerId) != ABILITY_IMPENETRABLE
