@@ -14305,24 +14305,7 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
             MulModifier(&modifier, UQ_4_12(1.5));	    
         break;
     case HOLD_EFFECT_RUSTED_ARMOR:
-        if (!gBattleMons[battlerId].status1
-                && !IS_BATTLER_OF_TYPE(battlerId, TYPE_FIRE)
-                && GetBattlerAbility(battlerId) != ABILITY_WATER_VEIL
-				&& !BattlerHasInnate(battlerId, ABILITY_WATER_VEIL)
-                && GetBattlerAbility(battlerId) != ABILITY_WATER_BUBBLE
-				&& !BattlerHasInnate(battlerId, ABILITY_WATER_BUBBLE)
-                && GetBattlerAbility(battlerId) != ABILITY_COMATOSE
-				&& !BattlerHasInnate(battlerId, ABILITY_COMATOSE)
-                && IsBattlerAlive(battlerId))
-            {
-                effect = ITEM_STATUS_CHANGE;
-                gBattleMons[battlerId].status1 = STATUS1_BURN;
-                BattleScriptExecute(BattleScript_FlameOrb);
-                RecordItemEffectBattle(battlerId, battlerHoldEffect);
-            } 
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_URSHIFU)
-            MulModifier(&modifier, UQ_4_12(2.0));
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_URSHIFU_RAPID_STRIKE)
             MulModifier(&modifier, UQ_4_12(2.0));	    
         break;	    
     case HOLD_EFFECT_CHOICE_BAND:
